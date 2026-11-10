@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Exports the animations write into whatever folder you run them from
+# (--png stage frames, --gif films, and frames saved with the S key).
+# The curated previews under assets/ are kept.
+*.png
+*.gif
+!assets/**/*.png
+!assets/**/*.gif
