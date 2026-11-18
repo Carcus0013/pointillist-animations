@@ -5,7 +5,7 @@ Every animation below is one Python file. Story pieces play once and hold their 
 `--gif` (the whole film), and share the window keys **Space** pause, **R** restart, **S** save frame, **Esc** quit.
 The descriptions are each script's own docstring.
 
-- **Garden**: [Sunflower](#sunflower), [Lotus](#lotus), [Sakura](#sakura), [Koi pond](#koi-pond), [Firefly meadow](#fireflies), [Glowing beach](#glow-beach), [Northern lights](#aurora), [Kelp forest](#kelp), [Queen of the Night](#night-bloom), [Black hole](#black-hole), [Golden hour](#golden-hour), [Mount Fuji](#fuji), [Diwali night](#diwali)
+- **Garden**: [Sunflower](#sunflower), [Lotus](#lotus), [Sakura](#sakura), [Koi pond](#koi-pond), [Firefly meadow](#fireflies), [Glowing beach](#glow-beach), [Northern lights](#aurora), [Kelp forest](#kelp), [Queen of the Night](#night-bloom), [Black hole](#black-hole), [Golden hour](#golden-hour), [Mount Fuji](#fuji), [Diwali night](#diwali), [The Dragon Gate](#dragon-bowl)
 - **Neon**: [Neon alley](#neon-alley), [Hologram sakura](#holo-sakura), [Synthwave drive](#synthwave-drive), [Zeppelin harbour](#zeppelin-harbor), [Iron streamliner](#iron-streamliner)
 - **Dandelion**: [night, sunset and sunrise](#dandelion)
 - **ASCII rose**: [in the terminal](#ascii-rose)
@@ -412,6 +412,40 @@ python animations/garden/diwali.py --png
 ```
 
 ![Diwali night: five stages](../assets/images/diwali_stages.jpg)
+
+<br clear="right">
+
+<a id="dragon-bowl"></a>
+### The Dragon Gate
+
+<img src="../assets/previews/dragon_bowl.gif" width="300" align="right" alt="The Dragon Gate preview">
+
+| | |
+|---|---|
+| **File** | [`animations/garden/dragon_bowl.py`](../animations/garden/dragon_bowl.py) |
+| **Class** | `DragonBowl` |
+| **Length** | 60 s, story, plays once |
+| **`--png` stages** | 8, 20.2, 27.9, 44, 50.3 s |
+| **Preview clip** | 25.8-30.8 s |
+
+The old story says a carp that swims up through the Dragon Gate and leaps the falls becomes a
+dragon. Here it happens in a goldfish bowl on a table by a moonlit window. The glass turns the
+window upside down in the water; the bowl gathers the moonlight into a bright knot on the table.
+A moon jellyfish pulses in the water, glowing brighter as the night deepens, while a fantail
+goldfish circles. The fish dives down to the little red gate standing on the gravel and swims
+through it - the gate flares gold - the water spins into a whirlpool, and the fish rides it up
+and leaps clean out of the bowl. In a flash it unfurls into a golden dragon. The jellyfish lets
+its light go as a pearl that floats up out of the water, and the dragon chases it round and
+round the bowl - in front of the glass, behind it, seen magnified through the water - swooping
+over the top, until it catches the pearl, spirals down, and pours itself back into the bowl.
+The pearl sinks back into the jellyfish, and a goldfish swims on as if nothing had happened.
+
+```bash
+python animations/garden/dragon_bowl.py
+python animations/garden/dragon_bowl.py --png
+```
+
+![The Dragon Gate: five stages](../assets/images/dragon_bowl_stages.jpg)
 
 <br clear="right">
 

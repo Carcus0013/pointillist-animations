@@ -40,6 +40,7 @@ CATALOG = {
     "golden_hour":      ("garden/golden_hour.py", "GoldenHour", (), 45.0, None),
     "fuji":             ("garden/fuji.py", "Fuji", (), 41.5, None),
     "diwali":           ("garden/diwali.py", "Diwali", (), 45.5, None),
+    "dragon_bowl":      ("garden/dragon_bowl.py", "DragonBowl", (), 25.8, None),
     "neon_alley":       ("neon/neon_alley.py", "NeonAlley", (), 29.5, None),
     "holo_sakura":      ("neon/holo_sakura.py", "HoloSakura", (), 44.0, None),
     "synthwave_drive":  ("neon/synthwave_drive.py", "SynthwaveDrive", (), 10.0, None),

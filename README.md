@@ -4,14 +4,14 @@
 
 # Pointillist Animations
 
-**Twenty procedural animations painted entirely in dots: flowers, landscapes, neon cities, a black hole,
-Mount Fuji and Diwali, each a one-minute film drawn live by Python and NumPy. Plus a 3D rose that blooms in your terminal.**
+**Twenty-one procedural animations painted entirely in dots: flowers, landscapes, neon cities, a black hole,
+Mount Fuji, Diwali and a goldfish that becomes a dragon, each a one-minute film drawn live by Python and NumPy. Plus a 3D rose that blooms in your terminal.**
 
 [![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-arrays-013243?logo=numpy&logoColor=white)](https://numpy.org/)
 [![Pillow](https://img.shields.io/badge/Pillow-images-8CAAE6)](https://python-pillow.org/)
 [![Tkinter](https://img.shields.io/badge/GUI-tkinter-555555)](https://docs.python.org/3/library/tkinter.html)
-[![Animations](https://img.shields.io/badge/animations-20-ff2ea0)](#gallery)
+[![Animations](https://img.shields.io/badge/animations-21-ff2ea0)](#gallery)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [Gallery](#gallery) · [Quick start](#quick-start) · [Run each animation](#running-the-animations) · [How it works](#how-it-works) · [Engine docs](docs/ENGINE.md) · [All animations](docs/ANIMATIONS.md)
@@ -32,7 +32,7 @@ The collection comes in four parts:
 
 | Set | What it is | Count |
 |---|---|:---:|
-| **[Garden](#garden)** | Flowers and landscapes, from a sunflower's summer day to a black hole, Mount Fuji and Diwali | 13 |
+| **[Garden](#garden)** | Flowers and landscapes, from a sunflower's summer day to a black hole, Mount Fuji, Diwali and a dragon in a fishbowl | 14 |
 | **[Neon](#neon)** | Cyberpunk, synthwave and dieselpunk cities, with a small neon-light toolkit | 5 |
 | **[Dandelion](#dandelion)** | A dandelion's whole life, at night, sunset and a dewy sunrise | 1 (3 themes) |
 | **[ASCII rose](#ascii-rose)** | A 3D rose that blooms in your terminal, in 24-bit colour | 1 |
@@ -41,7 +41,7 @@ The collection comes in four parts:
 
 - **Pure pointillism.** Every surface and every light is made of dots; light dots are additive, so glows,
   reflections and bloom build up naturally.
-- **One-minute stories and seamless loops.** Fourteen pieces are stories with a beginning and an end;
+- **One-minute stories and seamless loops.** Fifteen pieces are stories with a beginning and an end;
   five loop forever without a visible seam (koi pond, glowing beach, kelp forest, Mount Fuji, synthwave drive).
 - **Deterministic and stateless.** `render(t)` is a pure function of time with seeded randomness: pause, scrub,
   restart and export always give identical frames.
@@ -51,7 +51,8 @@ The collection comes in four parts:
 - **Live window plus exports.** Every animation opens a Tk window (Space, R, S, Esc) and can save five
   stage frames (`--png`) or the whole film as a GIF (`--gif`).
 - **Real phenomena, carefully staged.** Gravitational lensing and an Einstein ring, Diamond Fuji and Akafuji,
-  synchronous fireflies, bioluminescent surf, a light echo, a rangoli that pours itself and then rises into fireworks.
+  synchronous fireflies, bioluminescent surf, a light echo, a rangoli that pours itself and then rises into fireworks,
+  a fishbowl that turns the room upside down and focuses the moonlight into a knot on the table.
 - **Small dependency footprint.** NumPy and Pillow; the window uses the standard library's tkinter.
 
 <a id="gallery"></a>
@@ -70,7 +71,7 @@ animations run at your window size. Five-stage strips of each whole minute are i
 | <img src="assets/previews/koi_pond.gif" width="260" alt="Koi pond"><br>**[Koi pond](docs/ANIMATIONS.md#koi-pond)**<br><sub>top-down, seamless loop</sub> | <img src="assets/previews/fireflies.gif" width="260" alt="Firefly meadow"><br>**[Firefly meadow](docs/ANIMATIONS.md#fireflies)**<br><sub>flashes that fall into step; a fox</sub> | <img src="assets/previews/glow_beach.gif" width="260" alt="Glowing beach"><br>**[Glowing beach](docs/ANIMATIONS.md#glow-beach)**<br><sub>bioluminescent surf, seamless loop</sub> |
 | <img src="assets/previews/aurora.gif" width="260" alt="Northern lights"><br>**[Northern lights](docs/ANIMATIONS.md#aurora)**<br><sub>curtains, a crown, a frozen lake</sub> | <img src="assets/previews/kelp.gif" width="260" alt="Kelp forest"><br>**[Kelp forest](docs/ANIMATIONS.md#kelp)**<br><sub>looking up; a seal and a school, loop</sub> | <img src="assets/previews/night_bloom.gif" width="260" alt="Queen of the Night"><br>**[Queen of the Night](docs/ANIMATIONS.md#night-bloom)**<br><sub>a one-night cactus bloom, a hawk moth</sub> |
 | <img src="assets/previews/black_hole.gif" width="260" alt="Black hole"><br>**[Black hole](docs/ANIMATIONS.md#black-hole)**<br><sub>a star torn apart; lensing and a disk</sub> | <img src="assets/previews/golden_hour.gif" width="260" alt="Golden hour"><br>**[Golden hour](docs/ANIMATIONS.md#golden-hour)**<br><sub>backlit wheat and endless shadows</sub> | <img src="assets/previews/fuji.gif" width="260" alt="Mount Fuji"><br>**[Mount Fuji](docs/ANIMATIONS.md#fuji)**<br><sub>a living woodblock print, seamless loop</sub> |
-| <img src="assets/previews/diwali.gif" width="260" alt="Diwali night"><br>**[Diwali night](docs/ANIMATIONS.md#diwali)**<br><sub>rangoli, diyas, sparklers, fireworks</sub> | | |
+| <img src="assets/previews/diwali.gif" width="260" alt="Diwali night"><br>**[Diwali night](docs/ANIMATIONS.md#diwali)**<br><sub>rangoli, diyas, sparklers, fireworks</sub> | <img src="assets/previews/dragon_bowl.gif" width="260" alt="The Dragon Gate"><br>**[The Dragon Gate](docs/ANIMATIONS.md#dragon-bowl)**<br><sub>a goldfish leaps and becomes a dragon</sub> | |
 
 <a id="neon"></a>
 ### Neon
@@ -112,6 +113,7 @@ animations run at your window size. Five-stage strips of each whole minute are i
 | Golden hour | ![](assets/images/golden_hour_stages.jpg) |
 | Mount Fuji | ![](assets/images/fuji_stages.jpg) |
 | Diwali night | ![](assets/images/diwali_stages.jpg) |
+| The Dragon Gate | ![](assets/images/dragon_bowl_stages.jpg) |
 | Neon alley | ![](assets/images/neon_alley_stages.jpg) |
 | Hologram sakura | ![](assets/images/holo_sakura_stages.jpg) |
 | Synthwave drive | ![](assets/images/synthwave_drive_stages.jpg) |
@@ -145,7 +147,7 @@ flowchart TB
         runner["run(): Viewer window,<br/>--png, --gif"]
     end
     neon["animations/neon/neon.py<br/>Cam, Lights, tone curve, sign glyphs"]
-    garden["animations/garden/*.py<br/>13 scenes"]
+    garden["animations/garden/*.py<br/>14 scenes"]
     neonscenes["animations/neon/*.py<br/>5 scenes"]
     standalone["animations/dandelion, animations/ascii-rose<br/>self-contained"]
     garden --> engine
@@ -208,6 +210,7 @@ Run from the repository root (or anywhere: each script finds the engine relative
 | Golden hour | `python animations/garden/golden_hour.py` | 60 s | story |
 | Mount Fuji | `python animations/garden/fuji.py` | 60 s | loop |
 | Diwali night | `python animations/garden/diwali.py` | 60 s | story |
+| The Dragon Gate | `python animations/garden/dragon_bowl.py` | 60 s | story |
 | Neon alley | `python animations/neon/neon_alley.py` | 60 s | story |
 | Hologram sakura | `python animations/neon/holo_sakura.py` | 60 s | story |
 | Synthwave drive | `python animations/neon/synthwave_drive.py` | 60 s | loop |
@@ -330,7 +333,7 @@ brighter on the side moving toward the viewer.
 Water and wet ground reflect by mirroring rows about the waterline with a rippling horizontal offset
 (lotus, Mount Fuji, hologram sakura) or by stretching light sources into trembling streaks (neon alley).
 Seamless loops use only motions that repeat a whole number of times per minute, closed paths and events
-that finish inside the minute. The Neon scenes, the black hole and Diwali pass the frame through a soft
+that finish inside the minute. The Neon scenes, the black hole, Diwali and the Dragon Gate pass the frame through a soft
 tone curve, so the hottest light turns white while its halo keeps its colour.
 
 </details>
@@ -349,8 +352,8 @@ pointillist-animations/
 ├── engine/
 │   └── pointillism.py          # the shared dot-painting engine, window and exporters
 ├── animations/
-│   ├── garden/                 # 13 scenes: sunflower, lotus, sakura, koi pond, fireflies, glowing beach,
-│   │                           #   northern lights, kelp, Queen of the Night, black hole, golden hour, Fuji, Diwali
+│   ├── garden/                 # 14 scenes: sunflower, lotus, sakura, koi pond, fireflies, glowing beach, northern
+│   │                           #   lights, kelp, Queen of the Night, black hole, golden hour, Fuji, Diwali, Dragon Gate
 │   ├── neon/                   # neon.py (camera, neon lights, tone curve) + 5 city scenes
 │   ├── dandelion/              # dandelion.py and its sunset / sunrise shortcuts (self-contained)
 │   └── ascii-rose/             # rose.py, the terminal rose (self-contained)
@@ -364,7 +367,7 @@ pointillist-animations/
 │   └── ANIMATIONS.md
 └── assets/
     ├── images/                 # banner and five-stage strips (JPEG)
-    └── previews/               # 22 preview GIFs
+    └── previews/               # 23 preview GIFs
 ```
 
 <a id="performance"></a>
@@ -391,6 +394,7 @@ Python 3.15.0, NumPy 2.5.4 and Pillow 13.0.0. Expect different numbers on other 
 | Kelp forest | 60.9 | 16.4 | | Iron streamliner | 50.7 | 19.7 |
 | Queen of the Night | 35.3 | 28.3 | | Dandelion (night) | 22.3 | 44.9 |
 | Black hole | 68.0 | 14.7 | | Dandelion (sunrise) | 40.3 | 24.8 |
+| The Dragon Gate | 39.4 | 25.4 | | | | |
 
 </details>
 

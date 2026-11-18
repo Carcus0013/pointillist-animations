@@ -162,8 +162,8 @@ flowchart LR
 | `flicker(t, seed, rate, broken)` | A tube's hum, with stutters when `broken > 0`. |
 | `NEON` | The palette: pink, magenta, cyan, blue, violet, amber, red, green, white. |
 
-Some Garden scenes (`black_hole.py`, `diwali.py`) carry their own small tone curve in the
-same spirit.
+Some Garden scenes (`black_hole.py`, `diwali.py`, `dragon_bowl.py`) carry their own small tone curve
+in the same spirit.
 
 ## Seamless loops
 
